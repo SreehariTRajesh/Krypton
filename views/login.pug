@@ -1,0 +1,39 @@
+doctype html
+html
+    title Krypton
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Padauk&family=Press+Start+2P&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    link(href='/styles/login.css' rel='stylesheet')
+    body
+        div(class='navbar')
+            div(class='website-logo')
+                img(src='/images/Logo19.svg' alt='Image cannot be displayed' height="80px" width="80px")
+            div(class='index-title')
+                p(id="title-content") Krypton
+            div(class='login')
+                a(href='/login') Login
+            div(class='signup')
+                a(href='/sign-up') New User 
+        div(class='login-content')
+            div(class='image')
+                img(src='/images/undraw_mobile_encryption_re_yw3o.svg' height='400px' width='400px')
+            div(class='login-box')
+                div(class='login-frame')
+                    div(class='form-head')
+                        h3 Login
+                    div(class='form-body')
+                        form(action='/login' method='POST')
+                            div(class='username')
+                                label(for='username') Username/Email*
+                                br
+                                input(type='text' name='user' autocomplete='off' id='user')
+                            div(class='check1')
+                                p(id='check-user')
+                            div(class='password')
+                                label(for='password') Password*
+                                br
+                                input(type='password' name='pw' autocomplete='off' id='pw')
+                            div(class='check2')
+                                p(id='check-pw')
+                            div(class='btn')
+                                button(id='login-btn' type='click') Login
+        script(src='/scripts/login.js')

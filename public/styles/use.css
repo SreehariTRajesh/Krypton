@@ -1,0 +1,101 @@
+html{
+    background-color: #282828;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #202020;
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0px 3px;
+}
+.website-logo{
+    flex: 1;
+}
+.index-title{
+    flex: 3;
+    color: #6600ff;
+    font-family:'Audiowide',cursive;
+    font-size: 25px;
+    text-align: center;
+}
+.index-title p{
+    position: relative;
+    top: 25%;
+}
+.friends{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.friends a{
+    color: #33ff66;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.rooms{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.rooms a{
+    color: #6633ff;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.profile{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.profile a{
+    color: #ff3366;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+
+.main{
+    background-color:#505050;
+    color: whitesmoke;
+    text-shadow: 0.5px 0.5px black;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 5px;
+    font-family: 'Audiowide',cursive;
+}
+.title{
+    color: #ff3366;
+}

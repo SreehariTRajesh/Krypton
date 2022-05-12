@@ -1,0 +1,41 @@
+doctype html
+html
+    link(href='/styles/profile.css' rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css2?family=Audiowide&family=Padauk&family=Press+Start+2P&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet")
+    body
+        div(class='navbar')
+            div(class='website-logo')
+                img(src='/images/Logo19.svg' alt='Image cannot be displayed' height="80px" width="80px")
+            div(class='index-title')
+                p(id="title-content") Krypton
+            div(class='friends')
+                a(href=`/${user._id}/use` id='friends') How to Use?
+            div(class='rooms')
+                a(href=`/${user._id}/my-rooms` id='rooms') My Rooms
+            div(class='profile')
+                a(href=`/${user._id}/dashboard` id='prof') Dashboard
+        div(class='main')
+            div(class='user-profile')
+                h3 #{user.username}'s Profile
+            div(class='row1')
+                div(class='user-name')
+                    p UserName
+                    h3 #{user.username}
+                div(class='email')
+                    p Email
+                    h3 #{user.email}
+            div(class='row2')
+                div(class='nickname')
+                    p Nickname
+                    h3 #{user.nickname}
+                div(class='bio')
+                    p Bio
+                    h3 #{user.bio}
+            div(class='row3')
+                div(class='friend')
+                    p Friends
+                    h3 #{user.friend_list.length}
+                div(class='meetings')
+                    p Meetings
+                    h3 #{user.meeting_list.length}
+        script(src='/scripts/profile.js')

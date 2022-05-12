@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-image:linear-gradient(to right,#080000,#000033,#000033);
+}
+.navbar{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000033 0%, #2c3e50 74%);
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+}
+.website-logo{
+    flex: 1;
+}
+.index-title{
+    flex: 3;
+    color: #6600ff;
+    font-family:'Audiowide',cursive;
+    font-size: 25px;
+    text-align: center;
+}
+.index-title p{
+    position: relative;
+    top: 25%;
+}
+.login{
+    flex: 1;
+    text-align: center;
+}
+.login a{
+    text-decoration: none;
+    font-family:'Audiowide',cursive;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: 35%;
+}
+.login a:hover{
+    transition: 2s;
+    background-color: white;
+    color: black;
+}
+.signup{
+    flex: 1;
+    text-align: center;
+}
+.signup a{
+    text-decoration: none;
+    font-family:'Audiowide',cursive;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: 35%;
+}
+.signup a:hover{
+    transition: 2s;
+    background-color: white;
+    color:black;
+}
+.login-content{
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+}
+.image{
+    flex: 1;
+    text-align: center;
+}
+.image img{
+    position: relative;
+    top: 25%;
+}
+.login-box{
+    flex: 1;
+    font-family: 'Audiowide',cursive;
+}
+.login-frame{
+    width: 70%;
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    top: 150px;
+}
+.form-head{
+    text-align: center;
+    flex: 1;
+    border-radius: 15px 15px 0px 0px;
+}
+.form-head h3{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+}
+.form-head{
+    background-image: linear-gradient(to right,#9900ff,#cc00ff,#ff00ff);
+}
+.form-body{
+    flex: 4;
+    background-color: white;
+    border-radius:0px 0px 15px 15px;
+}
+.form-body form{
+    position: relative;
+    left: 25%;
+    height: 300px;
+    display: inline-flex;
+    flex-direction: column;
+}
+.username{
+    flex: 1;
+    padding-top:20%;
+}
+.username input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    font-family: 'Audiowide',cursive;
+    width: 100%;
+}
+.password input{
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+    font-family: 'Audiowide',cursive;
+    width: 100%;
+}
+.password{
+    flex: 1;
+}
+.btn{
+    flex: 1;
+}
+.btn button{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #2c3e50;
+    border:2px solid #ff3366;
+    color: #ff3366;
+    font-family: 'Audiowide',cursive;
+    border-radius: 15px;
+}
+#check-user{
+    color: red;
+    font-size: 8px;
+    position: relative;
+    top: -20px;
+}
+#check-pw{
+    color: red;
+    font-size: 8px;
+    position: relative;
+    top: -20px;
+}

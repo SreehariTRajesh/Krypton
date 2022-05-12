@@ -1,0 +1,32 @@
+doctype html
+html
+    link(href='/styles/use.css' rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css2?family=Audiowide&family=Padauk&family=Press+Start+2P&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet")
+    body
+        div(class='navbar')
+            div(class='website-logo')
+                img(src='/images/Logo19.svg' alt='Image cannot be displayed' height="80px" width="80px")
+            div(class='index-title')
+                p(id="title-content") Krypton
+            div(class='friends')
+                a(href=`/${user_id}/use` id='friends') How to Use?
+            div(class='rooms')
+                a(href=`/${user_id}/my-rooms` id='rooms') My Rooms
+            div(class='profile')
+                a(href=`/${user_id}/dashboard` id='prof') Dashboard
+        div(class='main')
+            div(class='title')
+                h3 How to Use Krypton?
+            div(class='cont')
+                p <span style='color:#3366ff'>General Zod</span>:Hello Human. I am General Zod, commander of the military forces of Krypton
+                br
+                p <span style='color:#3366ff'>General Zod</span>:Krypton is designed to meet with your requirements of every user to interact with one another through the web.
+                br
+                p <span style='color:#3366ff'>General Zod</span>: To use krypton follow these simple steps:
+                p &emsp;⚔ Go to the create room option displayed on the dashboard
+                p &emsp;⚔ Fill out the form in the create room page
+                p &emsp;⚔ Go to My Rooms page
+                p &emsp;⚔ Click Join Room
+                p &emsp;⚔ Your messages would be displayed on the message box in the dashboard
+                p &emsp;⚔ Join button on the message allows you to join a chat room
+        script(src='/scripts/use.js')

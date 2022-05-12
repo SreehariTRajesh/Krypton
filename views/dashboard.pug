@@ -1,0 +1,57 @@
+doctype html
+html
+    link(href='/styles/dashboard.css' rel='stylesheet')
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer")
+    link(href="https://fonts.googleapis.com/css2?family=Audiowide&family=Padauk&family=Press+Start+2P&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet")
+    body
+        div(class='navbar')
+            div(class='website-logo')
+                img(src='/images/Logo19.svg' alt='Image cannot be displayed' height="80px" width="80px")
+            div(class='index-title')
+                p(id="title-content") Krypton
+            div(class='friends')
+                a(href=`/${user_id}/use` id='friends') How to Use?
+            div(class='rooms')
+                a(href=`/${user_id}/my-rooms` id='rooms') My Rooms
+            div(class='profile')
+                a(href=`/${user_id}/profile` id='prof') Profile
+        div(class='main')
+            div(class='quick-options')
+                div(class='create-a-room')
+                    a(href=`/${user_id}/create-a-room` id='l1') Create Room
+                div(class='view-room')
+                    a(href=`/${user_id}/my-rooms` id='l2') My Rooms
+                div(class='connect')
+                    a(href='/' id='l3') Logout
+                div(class='logo')
+                    img(src='/images/Logo19.svg')
+            div(class='messages' id='p')
+                -var j=0
+                each i,message in messages
+                    div(class='message'  id=`message${j}`)
+                        div(class='sent-by')
+                            p(id='det') General Zod&ensp;#{message.date}&ensp;#{message.time}
+                            p(id='msg') #{message.host} invites you to join his chatroom 
+                        div(class='btn' id=`btn${j}`)
+                            button(id=`join${j}` room_id=`/${user_id}/${message.name}` class='btn-join') Join Room
+                            button(id=`delete${j}` msg_id=`${message._id}` class='btn-delete') <span style='color:white;'>🗑<span> Delete Message
+                    -j=j+1
+        script.
+                var t=!{JSON.stringify(messages)}
+                p=Array.from(t);
+                console.log(p);
+                for(var i=0;i<p.length;++i){
+                    console.log(p[i].name);
+                }
+                const map=new Map();
+                var btn=new Array();
+                for(var i=0;i<p.length;++i){
+                    btn.push(document.getElementById(`join${i}`));
+                }
+                var btn_del=new Array();
+                for(var i=0;i<p.length;++i){
+                    btn_del.push(document.getElementById(`delete${i}`))
+                }
+                var x=!{JSON.stringify(user_id)}
+                y=x.toString();
+        script(src='/scripts/dashboard.js')

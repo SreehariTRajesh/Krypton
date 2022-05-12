@@ -1,0 +1,56 @@
+doctype html
+html
+    link(href='/styles/my_rooms.css' rel='stylesheet')
+    link(href="https://fonts.googleapis.com/css2?family=Audiowide&family=Padauk&family=Press+Start+2P&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet")
+    body
+        div(class='navbar')
+            div(class='website-logo')
+                img(src='/images/Logo19.svg' alt='Image cannot be displayed' height="80px" width="80px")
+            div(class='index-title')
+                p(id="title-content") Krypton
+            div(class='friends')
+                a(href=`/${user_id}/use` id='friends') How to Use?
+            div(class='rooms')
+                a(href=`/${user_id}/my-rooms` id='rooms') My Rooms
+            div(class='profile')
+                a(href=`/${user_id}/dashboard` id='prof') Dashboard
+        div(class='main')
+            div(class='title')
+                h3 #{nickname}'s Rooms
+            div(class='body')
+                -var j=0
+                each meeting,i in meeting_list
+                    div(class='meeting' id=`meeting${j}`)    
+                        div(class='time')
+                            p Created on #{meeting.date} #{meeting.time}
+                        div(class='attendees')
+                            p(id='title') Attendees
+                            div(class='list')
+                                each attendee,i in meeting.attendees
+                                    div(class='box')
+                                        p #{attendee}
+                        div(class='options')
+                            button(class='join' id=`join${j}`) 📱 Join
+                            button(class='del' id=`delete${j}`) 🗑️ Delete
+                    -j=j+1
+        script.
+                var t=!{JSON.stringify(meeting_list)}
+                p=Array.from(t);
+                console.log(p);
+                for(var i=0;i<p.length;++i){
+                    console.log(p[i].name);
+                }
+                const map=new Map();
+                var btn=new Array();
+                for(var i=0;i<p.length;++i){
+                    btn.push(document.getElementById(`join${i}`));
+                }
+                var btn_del=new Array();
+                for(var i=0;i<p.length;++i){
+                    btn_del.push(document.getElementById(`delete${i}`))
+                }
+                console.log(btn_del)
+                var x=!{JSON.stringify(user_id)}
+                y=x.toString();
+                console.log(y)
+        script(src='/scripts/my_rooms.js')

@@ -1,0 +1,27 @@
+doctype html
+html
+    title Krypton
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Padauk&family=Press+Start+2P&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet">
+    link(href='/styles/index.css' rel='stylesheet')
+    script(src='/scripts/index.js')
+    body
+        div(class='navbar')
+            div(class='website-logo')
+                img(src='/images/Logo19.svg' alt='Image cannot be displayed' height="80px" width="80px")
+            div(class='index-title')
+                p(id="title-content") Krypton
+            div(class='login')
+                a(href='/login') Login
+            div(class='signup')
+                a(href='/sign-up') New User
+        div(class='web-content')
+            div(class='image')
+                img(src='/images/undraw_connection_re_lcud.svg' height="600px" width="600px")
+            div(class='text')
+                div(class='desc')
+                    p(id='description') Connect, share, grow . . .
+                div(class='menu')
+                    div(class='login-main')
+                        a(href='/login' id='login-id') Login
+                    div(class='signup-main')
+                        a(href='/sign-up' id='signup-id') Signup

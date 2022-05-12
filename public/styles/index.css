@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-image:linear-gradient(to right,#080000,#000033,#000033);
+}
+.navbar{
+    background-color: #000000;
+    background-image: linear-gradient(147deg, #000033 0%, #2c3e50 74%);
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+}
+.website-logo{
+    flex: 1;
+}
+.index-title{
+    flex: 3;
+    color: #6600ff;
+    font-family:'Audiowide',cursive;
+    font-size: 25px;
+    text-align: center;
+}
+.index-title p{
+    position: relative;
+    top: 25%;
+}
+.login{
+    flex: 1;
+    text-align: center;
+}
+.login a{
+    text-decoration: none;
+    font-family:'Audiowide',cursive;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: 35%;
+}
+.login a:hover{
+    transition: 2s;
+    background-color: white;
+    color: black;
+}
+.signup{
+    flex: 1;
+    text-align: center;
+}
+.signup a{
+    text-decoration: none;
+    font-family:'Audiowide',cursive;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    position: relative;
+    top: 35%;
+}
+.signup a:hover{
+    transition: 2s;
+    background-color: white;
+    color:black;
+}
+.web-content{
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+}
+.image{
+    flex: 1;
+    text-align: center;
+}
+.text{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    flex: 1;
+    display: inline-flex;
+    flex-direction: column;
+}
+.desc{
+    font-family:'Audiowide',cursive;
+    font-size: 30px;
+    color: white;
+    background-image: linear-gradient(to right,#6633ff,#9933ff,#cc33ff);
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    text-align: center;
+    border-radius: 15px;
+    flex: 1;
+}
+.desc p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menu{
+    flex: 2;
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+}
+.login-main{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.login-main a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color:#2ea44f;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    color: white;
+}
+.login-main a:hover{    
+    transition: 2s;
+    background-color: white;
+    color: black;
+}
+.signup-main{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.signup-main a{
+    text-decoration: none;
+    font-size: 20px;
+    background-color:#2ea44f;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 15px;
+    color: white;
+}
+.signup-main a:hover{
+    transition: 2s;
+    background-color: white;
+    color: black;
+}

@@ -1,0 +1,166 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-image: radial-gradient( circle 610px at 5.2% 51.6%,  rgba(5,8,114,1) 0%, rgba(7,3,53,1) 97.5% );
+}
+.navbar{
+    width: 100%;
+    background-color: #4158D0;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    display: inline-flex;
+    height: 60px;
+}
+.room-id{
+    flex: 2;
+    text-align: center;
+    position: relative;
+    font-family: 'Audiowide',cursive;
+}
+.room-id h3{
+    position: relative;
+    top: 30%;
+    color: whitesmoke;
+    text-shadow: 1px 1px 2px black;
+}
+.leave-btn{
+    flex: 1;
+    text-align: center;
+    position: relative;
+    font-family: 'Audiowide',cursive;
+}
+.leave-btn button{
+    font-family: 'Audiowide',cursive;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    top: 15%;
+    border-radius: 15px;
+    background-color: #000000;
+    color: royalblue;
+    box-shadow: 2px 3px #ff3366;
+}
+.main{
+    height: 600px;
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+}
+
+.meeting-details{
+    flex: 1;
+    background-color: #383838;
+}
+.message-area{
+    flex: 3;
+    overflow-y: auto;
+}
+.message{
+    background-color: white;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    background-color: darkslategray;
+    box-shadow: 2px 2px black;
+    font-family: 'Audiowide',cursive;
+    display: inline-flex;
+    flex-direction: column;
+}
+.msg-details{
+    position: relative;
+    left: 3%;
+}
+.msg-details{
+    flex: 1;
+    display: inline-flex;
+    font-size: 10px;
+}
+.username{
+    flex: 1;
+    color:#ff3366;
+}
+.time{
+    flex: 4;
+    color: #6633ff;
+}
+.msg-cont{
+    position: relative;
+    left: 3%;
+    color:white;
+}
+.message-input{
+    width: 100%;
+    max-width: 100%;
+    display: inline-flex;
+    margin-top: -10px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    background-color: #202020;
+}
+.msg-txt{
+    flex: 7;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.msg-txt input{
+    width: 100%;
+    height: 45px;
+    text-align: center;
+    font-family: 'Audiowide',cursive;
+}
+.submit{
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.submit input{
+    width: 70%;
+    height: 47px;
+    font-family: 'Audiowide',cursive;
+    background-color: #383838;
+    color:#6633ff;
+    border: 1px solid #6633ff;
+    border-radius: 21px;
+}
+input:focus{
+    outline: none;
+}
+.room-name{
+    background-color: black;
+    color: white;
+    font-family: 'Audiowide',cursive;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.room-name p{
+    position: relative;
+    top: 10px;
+    padding-bottom: 10px;
+}
+.part{
+    font-family: 'Audiowide',cursive;
+}
+.part h3{
+    color: #9966ff;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    background-image: linear-gradient(to right,#9933ff,#cc33ff,#ff33ff);
+    color: white;
+    border-top: 0.5px solid whitesmoke;
+    border-bottom: 0.5px solid whitesmoke;
+}
+.user-list{
+    overflow-y: auto;
+    height: 468px;
+}

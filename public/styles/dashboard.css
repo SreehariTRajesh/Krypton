@@ -1,0 +1,252 @@
+html{
+    background-color: #282828;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #202020;
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0px 3px;
+}
+.website-logo{
+    flex: 1;
+}
+.index-title{
+    flex: 3;
+    color: #6600ff;
+    font-family:'Audiowide',cursive;
+    font-size: 25px;
+    text-align: center;
+}
+.index-title p{
+    position: relative;
+    top: 25%;
+}
+.friends{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.friends a{
+    color: #33ff66;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.rooms{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.rooms a{
+    color: #6633ff;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.profile{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.profile a{
+    color: #ff3366;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.main{
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+}
+.quick-options{
+    flex: 1;
+    position: relative;
+    top: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-right: 1px solid #33ffff;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.view-room{
+    background-color: #303030;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    box-shadow: 2px 2px crimson;
+}
+.create-a-room{
+    background-color: #303030;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    box-shadow: 2px 2px lightskyblue;
+}
+.connect{
+    background-color: #303030;
+    height: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 30px;
+    box-shadow: 2px 2px #ff33ff;
+}
+.view-room a{
+    text-decoration: none;
+    font-family: 'Audiowide',cursive;
+    font-size: 20px;
+    color: #ffff66;
+    position: relative;
+    top: 25%;
+}
+.create-a-room a{
+    text-decoration: none;
+    font-family: 'Audiowide',cursive;
+    font-size: 20px;
+    color:#33ff99;
+    position: relative;
+    top: 25%;
+}
+.connect a{
+    text-decoration: none;
+    font-family: 'Audiowide',cursive;
+    font-size: 20px;
+    color:#6633ff;
+    position: relative;
+    top: 25%;
+}
+.messages{
+    flex: 4;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 60px;
+    border: 2px solid #ff0066;
+    box-shadow: 2px 2px  #ff0066 inset;
+    border-radius: 0px 15px 0px 15px;
+    overflow-y: auto;
+    height: 540px;
+}
+.message{
+    font-family: 'Audiowide',cursive;
+    width: 50%;
+    background-color: #404040;
+    display: inline-flex;
+    flex-direction: column;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px 5px 5px 5px;
+}
+#msg-id{
+    flex: 1;
+    position: relative;
+    left: 10%;
+}
+#msg-cont{
+    flex: 1;
+    position: relative;
+    color: #33ff66;
+    left: 10%;
+}
+.opt{
+    flex: 1;
+    position: relative;
+    left: 10%;
+    display: inline-flex;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.opt button{
+    font-size: 8px;
+    margin-left: 0px;
+    margin-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #383838;
+}
+#join{
+    color: #3366ff;
+    border-radius: 15px;
+    border: 1px solid #3366ff;
+}
+#del{
+    color: #ff3366;
+    border-radius: 15px;
+    border: 1px solid #ff3366;
+}
+#det{
+    font-size: 10px;
+    color: white;
+}
+#msg{
+    font-size: 15px;
+    color: white;
+}
+.sent-by{
+    position: relative;
+    left: 2%;
+}
+.btn{
+    position: relative;
+    left: 2%;
+}
+.btn button{
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+    font-family: 'Audiowide',cursive;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: gray;
+}
+.btn-join{
+    color: #ff0066;
+    border: 1px solid #ff0066;
+}
+.btn-delete{
+    color: #6633ff;
+    border: 1px solid #6633ff;
+}

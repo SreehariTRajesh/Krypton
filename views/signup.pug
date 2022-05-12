@@ -1,0 +1,58 @@
+doctype html
+html
+    title Krypton
+    link(href='https://fonts.googleapis.com/css2?family=Audiowide&family=Padauk&family=Press+Start+2P&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik:wght@300&display=swap' rel='stylesheet')
+    link(href='/styles/signup.css' rel='stylesheet')
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    body
+        div(class='navbar')
+            div(class='website-logo')
+                img(src='/images/Logo19.svg' alt='Image cannot be displayed' height='80px' width='80px')
+            div(class='index-title')
+                p(id='title-content') Krypton
+            div(class='login')
+                a(href='/login') Login
+            div(class='signup')
+                a(href='/sign-up') New User
+        div(class='register-form')
+            div(class='form-head')
+                h3 Sign up
+            form(action='/sign-up' method='POST' id='form-body')
+                div(class='username')
+                    label(for='username') Username *
+                    br
+                    input(type='text' id='user-name' name='username' autocomplete='off')
+                div(class='check1')
+                    p(id='check-username')
+                div(class='email')
+                    label(for='email') Email *
+                    br
+                    input(type='text' id='email' name='email' autocomplete='off')
+                div(class='check2')
+                    p(id='check-email')
+                div(class='nickname')
+                    label(for='nickname') Your Nickname *
+                    br
+                    input(type='text' id='nickname' name='nickname' autocomplete='off')
+                div(class='check3')
+                    p(id='check-nickname')
+                div(class='bio')
+                    label(for='bio') Bio
+                    br
+                    input(type='text' id='bio' name='bio'  autocomplete='off')
+                div(class='password')
+                    label(for='password') Set a Password *
+                    br
+                    input(type='password' id='password' name='password'  autocomplete='off')
+                div(class='check4')
+                    p(id='check-password')
+                div(class='retype')
+                    label(for='retype') Retype Password *
+                    br
+                    input(type='password' id='retype' name='retype' autocomplete='off')
+                div(class='check5')
+                    p(id='check-retype')
+                div(class='form-submit')
+                    button(id='signup-btn' type='click') Signup
+        script(src='/scripts/signup.js')
+    

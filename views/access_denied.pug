@@ -1,0 +1,22 @@
+doctype html
+html
+    title Krypton
+    link(href="https://fonts.googleapis.com/css2?family=Audiowide&family=Padauk&family=Press+Start+2P&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet")
+    link(href='/styles/access_denied.css' rel='stylesheet')
+    script(src='/scripts/access_denied.js')
+    body
+        div(class='navbar')
+            div(class='website-logo')
+                img(src='/images/Logo19.svg' alt='Image cannot be displayed' height="80px" width="80px")
+            div(class='index-title')
+                p(id="title-content") Krypton
+            div(class='login')
+                a(href='/login') Login
+            div(class='signup')
+                a(href='/sign-up') New User
+        div(class='page-content')
+            div(class='message')
+                h1(id='deny-access') ❌ Access Denied
+            div(class='image')
+                img(src='/images/undraw_access_denied_re_awnf.svg' height='400px' width='400px')
+        

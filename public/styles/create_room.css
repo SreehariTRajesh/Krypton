@@ -1,0 +1,166 @@
+html{
+    background-color: #282828;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #202020;
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0px 3px;
+}
+.website-logo{
+    flex: 1;
+}
+.index-title{
+    flex: 3;
+    color: #6600ff;
+    font-family:'Audiowide',cursive;
+    font-size: 25px;
+    text-align: center;
+}
+.index-title p{
+    position: relative;
+    top: 25%;
+}
+.friends{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.friends a{
+    color: #33ff66;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.rooms{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.rooms a{
+    color: #6633ff;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.profile{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.profile a{
+    color: #ff3366;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.meet-form{
+    width: 50%;
+    position: relative;
+    left: 25%;
+    height: 400px;
+    background: #c2e59c;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #64b3f4, #c2e59c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #64b3f4, #c2e59c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    display: inline-flex;
+    flex-direction: column;
+    position: relative;
+    top: 100px;
+    border-radius: 5px;
+}
+.header{
+    flex: 1;
+    font-family: 'Nanum Gothic', sans-serif;
+    text-align: center;
+    position: relative;
+    top: 5%;
+    color: whitesmoke;
+    text-shadow: 0.5px 0.5px black;
+}
+.body{
+    flex: 3;
+}
+.body form{
+    height: 100%;
+    display: inline-flex;
+    flex-direction: column;
+    font-family: 'Nanum Gothic',sans-serif;
+    width: 100%;
+}
+.room-name{
+    flex: 1;
+    width: 100%;
+}
+.room-name input{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+.room-name label{
+    position: relative;
+    left: 15%;
+}
+.att{
+    flex: 1;
+    width: 100%;
+}
+.att input{
+    position: relative;
+    left: 15%;
+    width: 70%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    border-bottom: 1px solid black;
+}
+.att label{
+    position: relative;
+    left: 15%;
+}
+.btn-create{
+    flex: 1;
+    width: 100%;
+    text-align: center;
+}
+.btn-create button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 30px;
+    font-family: 'Nanum Gothic',sans-serif;
+    background: #00C9FF;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #92FE9D, #00C9FF);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #92FE9D, #00C9FF); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: 1px solid black;
+}

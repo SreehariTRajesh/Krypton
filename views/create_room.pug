@@ -1,0 +1,36 @@
+doctype html
+html
+    link(href='/styles/create_room.css' rel='stylesheet')
+    link(rel="preconnect" href="https://fonts.googleapis.com")
+    link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+    link(href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet")
+    link(href="https://fonts.googleapis.com/css2?family=Audiowide&family=Padauk&family=Press+Start+2P&family=Quicksand:wght@300&family=Raleway:wght@100&family=Roboto+Mono:wght@100&family=Rubik:wght@300&display=swap" rel="stylesheet")
+    body
+        div(class='navbar')
+            div(class='website-logo')
+                img(src='/images/Logo19.svg' alt='Image cannot be displayed' height="80px" width="80px")
+            div(class='index-title')
+                p(id="title-content") Krypton
+            div(class='friends')
+                a(href=`/${user._id}/use` id='friends') How to Use ?
+            div(class='rooms')
+                a(href=`/${user._id}/my-rooms` id='rooms') My Rooms
+            div(class='profile')
+                a(href=`/${user._id}/dashboard` id='prof') Dashboard
+        div(class='main')
+            div(class='meet-form')
+                div(class='header')
+                    h3 CREATE A ROOM
+                div(class='body')
+                    form(action=`/${user._id}/create-a-room` method='POST')
+                        div(class='room-name')
+                            label(for='room-name') ROOM NAME<span style='color:red'>*</span>
+                            br
+                            input(type="text" id='room-name' name='room_name')
+                        div(class='att')
+                            label(for='att') ATTENDEES<span style='color:red'>*</span> (Enter nicknames seperated by comma)
+                            br
+                            input(type='text' id='att' name='att')
+                        div(class='btn-create')
+                            button(id='btn-create' type='submit') Create Room
+        script(src='/scripts/create_room.js')

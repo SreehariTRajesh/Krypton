@@ -1,0 +1,251 @@
+html{
+    background-color: #282828;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+.navbar{
+    background-color: #202020;
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+    box-shadow: 0px 3px;
+}
+.website-logo{
+    flex: 1;
+}
+.index-title{
+    flex: 3;
+    color: #6600ff;
+    font-family:'Audiowide',cursive;
+    font-size: 25px;
+    text-align: center;
+}
+.index-title p{
+    position: relative;
+    top: 25%;
+}
+.friends{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.friends a{
+    color: #33ff66;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.rooms{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.rooms a{
+    color: #6633ff;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.profile{
+    flex: 1;
+    font-family:'Audiowide',cursive;
+    text-align: center;
+}
+.profile a{
+    color: #ff3366;
+    text-decoration: none;
+    background-color: #303030;
+    position: relative;
+    top: 35%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    box-shadow: 2px 2px black;
+}
+.user-profile{
+    background-color: #484848;
+    font-family: 'Audiowide',cursive;
+    color: #ff3366;
+    height: 80px;
+    font-size: 20px;
+    text-align: center;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    top: 30px;
+    border-radius: 15px;
+    box-shadow: 2px 2px black;
+}
+.main{
+    display: block;
+}
+.user-profile h3{
+    position: relative;
+    top: 25px;
+}
+.row1{
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.user-name{
+    flex: 1;
+    text-align: center;
+    background-color: #484848;
+    border-radius: 15px;
+    margin-left: 150px;
+    margin-right: 10px;
+    padding-top: 10px;
+    box-shadow: 2px 2px black;
+}
+.user-name p{
+    color: #ff3366;
+    font-family: 'Audiowide',cursive;
+}
+.user-name h3{
+    color: white;
+    font-family: 'Audiowide',cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.email{
+    flex: 1;
+    text-align: center;
+    background-color: #484848;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 150px;
+    padding-top: 10px;
+    box-shadow: 2px 2px black;
+}
+.email{
+    color: #ff3366;
+    font-family: 'Audiowide',cursive;
+}
+.email h3{
+    color: white;
+    font-family: 'Audiowide',cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.row2{
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.nickname{
+    flex: 1;
+    text-align: center;
+    background-color: #484848;
+    border-radius: 15px;
+    margin-left: 150px;
+    margin-right: 10px;
+    padding-top: 10px;
+    box-shadow: 2px 2px black;
+}
+.nickname p{
+    color: #ff3366;
+    font-family: 'Audiowide',cursive;
+}
+.nickname h3{
+    color: white;
+    font-family: 'Audiowide',cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.bio{
+    flex: 1;
+    text-align: center;
+    background-color: #484848;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 150px;
+    padding-top: 10px;
+    box-shadow: 2px 2px black;
+}
+.bio p{
+    color: #ff3366;
+    font-family: 'Audiowide',cursive;
+}
+.bio h3{
+    color: white;
+    font-family: 'Audiowide',cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.row3{
+    display: inline-flex;
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    top: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.friend{
+    flex: 1;
+    text-align: center;
+    background-color: #484848;
+    border-radius: 15px;
+    margin-left: 150px;
+    margin-right: 10px;
+    padding-top: 10px;
+    box-shadow: 2px 2px black;
+}
+.friend p{
+    color: #ff3366;
+    font-family: 'Audiowide',cursive;
+}
+.friend h3{
+    color: white;
+    font-family: 'Audiowide',cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.meetings{
+    flex: 1;
+    text-align: center;
+    background-color: #484848;
+    border-radius: 15px;
+    margin-left: 10px;
+    margin-right: 150px;
+    padding-top: 10px;
+    box-shadow: 2px 2px black;
+}
+
+.meetings p{
+    color: #ff3366;
+    font-family: 'Audiowide',cursive;
+}
+.meetings h3{
+    color: white;
+    font-family: 'Audiowide',cursive;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
